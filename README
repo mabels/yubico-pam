@@ -356,11 +356,10 @@ Examples
 If you want to use the Yubikey to authenticate you on linux console
 logins, add the following to the top of /etc/pam.d/login:
 
-------
    auth sufficient pam_yubico.so id=16 debug
-------
 
 OpenVPN and ActiveDirectory
+---------------------------
 
 /etc/pam.d/openvpn
 auth  required  pam_yubico.so ldap_uri=ldap://ldap-srv debug id=19 yubi_attr=pager 
